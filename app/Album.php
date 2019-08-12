@@ -8,7 +8,7 @@ use App\Image;
 
 class Album extends Model
 {
-    protected $fillable = ['name'];
+    protected $fillable = ['image','name'];
 
     public function images(){
         return $this->hasMany(Image::class);
